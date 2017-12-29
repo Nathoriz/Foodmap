@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+  
+body {
+  font-family: 'Raleway', sans-serif !important;
+}
+
+.container-flex-row {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.container-flex-column {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  padding: 2em;
+}
+
+.vh100 {
+  height: 100vh;
+}
+
+.black {
+  background: #2b2b2b;
+}
+
+.title-splash {
+  width: 50%;
+  margin: 0 25% 0 25%;
+}
+
+.bg-map {
+  background-image: url(../assets/images/map.png);
+  background-size: cover;
+  width: 80%;
+  height: 200px;
+  margin: 0 10% 0 10%;
+}
+
+.title {
+  margin-bottom: 1em;
+  color: #ce7b2f;
+}
+
+.glyphicon-search {
+  font-size: 18px;
+}
