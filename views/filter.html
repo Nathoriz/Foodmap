@@ -16,7 +16,7 @@
     <form class="container-flex-column">
       <h2 class="subtitle">Comida cerca de ti</h2>
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="Filtrar restaurantes" aria-describedby="basic-addon2">
+        <input id="filterRestaurants" type="text" class="form-control" placeholder="Filtrar restaurantes" aria-describedby="basic-addon2">
         <span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-search"></i></span>
       </div>
       <br>
@@ -26,29 +26,64 @@
           <span class="glyphicon glyphicon-triangle-bottom pull-right"></span>
         </button>
         <ul class="dropdown-menu">
-          <li><a href="#">Pescados y Mariscos</a></li>
-          <li><a href="#">Vegetariana</a></li>
-          <li><a href="#">China</a></li>
-          <li><a href="#">Mexicana</a></li>
-          <li><a href="#">Criolla</a></li>
+          <li><a href="#" id="mar">Pescados y Mariscos</a></li>
+          <li><a href="#" id="vegetariana">Vegetariana</a></li>
+          <li><a href="#" id="china">China</a></li>
+          <li><a href="#" id="mexicana">Mexicana</a></li>
+          <li><a href="#" id="criolla">Criolla</a></li>
         </ul>
       </div>
     </form>
     <div class="restaurants container-flex-column col-xs-12">
-      <div class="col-xs-12 img-food img-rounded china-01">
-        <!-- Evento mouseover
-        <div class="info container-flex-column">
-          <p>jafasfafslajflafja</p>
-        </div>
-        -->
+      <div class="col-xs-12 img-food img-rounded china-01" data-restaurant="Sabor Oriental" data-food="china">
       </div>
-      <div class="col-xs-12 img-food img-rounded crio-01">  
+      <div class="col-xs-12 img-food img-rounded china-02" data-restaurant="El chinito" data-food="china">  
       </div>
-      <div class="col-xs-12 img-food img-rounded mar-01">
+      <div class="col-xs-12 img-food img-rounded china-03" data-restaurant="Choy Tac" data-food="china">  
       </div>
-      <div class="col-xs-12 img-food img-rounded mex-01">
+      <div class="col-xs-12 img-food img-rounded china-04" data-restaurant="Madam Tusan" data-food="china">  
       </div>
-      <div class="col-xs-12 img-food img-rounded vege-01">
+      <div class="col-xs-12 img-food img-rounded china-05" data-restaurant="Mr.Chino" data-food="china">  
+      </div>
+      <div class="col-xs-12 img-food img-rounded crio-01" data-restaurant="Panchita" data-food="criolla">  
+      </div>
+      <div class="col-xs-12 img-food img-rounded crio-02" data-restaurant="Toque Criollo" data-food="criolla">  
+      </div>
+      <div class="col-xs-12 img-food img-rounded crio-03" data-restaurant="Aromas Peruanos" data-food="criolla">  
+      </div>
+      <div class="col-xs-12 img-food img-rounded crio-04" data-restaurant="El Rincon" data-food="criolla">  
+      </div>
+      <div class="col-xs-12 img-food img-rounded crio-05" data-restaurant="La Muralla" data-food="criolla">  
+      </div>
+      <div class="col-xs-12 img-food img-rounded mar-01" data-restaurant="Memo" data-food="mar">
+      </div>
+      <div class="col-xs-12 img-food img-rounded mar-02" data-restaurant="Omero" data-food="mar">
+      </div>
+      <div class="col-xs-12 img-food img-rounded mar-03" data-restaurant="Delfino Mar" data-food="mar">
+      </div>
+      <div class="col-xs-12 img-food img-rounded mar-04" data-restaurant="Alfresco" data-food="mar">
+      </div>
+      <div class="col-xs-12 img-food img-rounded mar-05" data-restaurant="Punto Azul" data-food="mar">
+      </div>
+      <div class="col-xs-12 img-food img-rounded mex-01" data-restaurant="Taqueria No Te Rajes" data-food="mexicana">
+      </div>
+      <div class="col-xs-12 img-food img-rounded mex-02" data-restaurant="Taco Naco" data-food="mexicana">
+      </div>
+      <div class="col-xs-12 img-food img-rounded mex-03" data-restaurant="Mr.Tack" data-food="mexicana">
+      </div>
+      <div class="col-xs-12 img-food img-rounded mex-04" data-restaurant="El Meros Tacos" data-food="mexicana">
+      </div>
+      <div class="col-xs-12 img-food img-rounded mex-05" data-restaurant="Chinga tu Taco" data-food="mexicana">
+      </div>
+      <div class="col-xs-12 img-food img-rounded vege-01" data-restaurant="Sabor y Vida" data-food="vegetariana">
+      </div>
+      <div class="col-xs-12 img-food img-rounded vege-02" data-restaurant="Abdiel Vegan" data-food="vegetariana">
+      </div>
+      <div class="col-xs-12 img-food img-rounded vege-03" data-restaurant="La Cabaña Verde" data-food="vegetariana">
+      </div>
+      <div class="col-xs-12 img-food img-rounded vege-04" data-restaurant="Nanka" data-food="vegetariana">
+      </div>
+      <div class="col-xs-12 img-food img-rounded vege-05" data-restaurant="Va Bien" data-food="vegetariana">
       </div>
     </div>
     <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>

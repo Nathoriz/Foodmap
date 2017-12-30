@@ -78,6 +78,7 @@ div.img-food {
   padding-left: 0;
 }
 
+/* Clase para el evento mouseover */
 .info {
   width: 100%;
   height: 100%;
@@ -86,8 +87,18 @@ div.img-food {
   font-size: 25px;;
 }
 
-/* Imagenes */
+/* Clases Reutilizables */
+.display-block {
+  display: block;
+}
 
+.display-none {
+  display: none;
+}
+/* Fin */
+
+
+/* Imagenes */
 .china-01 {
   background-image: url(../assets/images/china-01.jpg);
 }
@@ -141,7 +152,7 @@ div.img-food {
 }
 
 .mar-04 {
-  background-image: url(../assets/images/mar-04.png);
+  background-image: url(../assets/images/mar-04.jpg);
 }
 
 .mar-05 {
@@ -161,7 +172,7 @@ div.img-food {
 }
 
 .mex-04 {
-  background-image: url(../assets/images/mex-04.png);
+  background-image: url(../assets/images/mex-04.jpg);
 }
 
 .mex-05 {
@@ -181,7 +192,7 @@ div.img-food {
 }
 
 .vege-04 {
-  background-image: url(../assets/images/vege-04.png);
+  background-image: url(../assets/images/vege-04.jpg);
 }
 
 .vege-05 {
