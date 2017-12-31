@@ -3,6 +3,7 @@ $(document).ready(function() {
   var $food = $(".img-food");
   var $filterRestaurants = $("#filterRestaurants");  // Input
   var $filterFood = $("#typeOfFood"); //select
+  var $closeModal = $("button.close");
   // imagenes
   
   
@@ -54,6 +55,13 @@ $(document).ready(function() {
     $(".stars").text('');
     $(".stars").text(stars);
   });
+
+  $closeModal.click(function() {
+    $filterRestaurants.val('');
+    $filterFood.val("");
+    $food.show();
+  });
+
 
     
   });
