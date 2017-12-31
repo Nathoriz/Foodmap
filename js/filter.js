@@ -31,6 +31,29 @@ $(document).ready(function() {
   // Filtro para restaurantes
 
   // Modal
+  $food.click(function() {
+    $food.removeAttr("data-toggle");
+    $food.removeAttr("data-target");
+    $food.attr("data-toggle","modal");
+    $food.attr("data-target","#myModal");
+
+    var restaurantName = $(this).data("restaurant");
+    var message = $(this).data("message");
+    var address = $(this).data("address");
+    var price = $(this).data("price");
+    var stars = $(this).data("star"); // Mejorar
+
+    $(".restaurant").text('');
+    $(".restaurant").text(restaurantName);
+    $(".message").text('');
+    $(".message").text(message);
+    $(".address").text('');
+    $(".address").text(address);
+    $(".price").text('');
+    $(".price").text(price);
+    $(".stars").text('');
+    $(".stars").text(stars);
+  });
 
     
   });
